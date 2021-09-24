@@ -7,18 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Seja bem vindo</h1>
-
-    <p>agora são: {{now}}</p>
-    
+    <h2>Listagem</h2>
     <ul>
     {% for transacao in transacoes %}
-        {% if transacao == "ti" %}
-            <li><b>{{transacao</b></li>
-         {%else %}   
-        <li>{{transacao}}</li>
-            {% endif %}
-        {% endfor %}
+       <li>{{transacao.descricao}} - {{transacao.data}} - {{transacao.valor}} - {{transacao.categoria}} - {{transacao.}}</li>
+    {% endfor %}
     </ul>
 </body>
 </html>
